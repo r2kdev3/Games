@@ -10,28 +10,29 @@ t.Screen().register_shape(image_left)
 t.Screen().register_shape(image_right)
 t.Screen().register_shape(image_up)
 t.Screen().register_shape(image_down)
+distance=10
 shape = t.Turtle()
 shape.shape(image_left)
 
 def up():
     shape.shape(image_up)
     shape.setheading(90)
-    shape.forward(10)
+    shape.forward(distance)
 
 def down():
     shape.shape(image_down)
     shape.setheading(270)
-    shape.forward(10)
+    shape.forward(distance)
 
 def left():
     shape.shape(image_left)
     shape.setheading(180)
-    shape.forward(10)
+    shape.forward(distance)
 
 def right():
     shape.shape(image_right)
     shape.setheading(0)
-    shape.forward(10)
+    shape.forward(distance)
 
 t.setup(500, 500)
 t.Screen().bgcolor("sky blue")
